@@ -5,7 +5,6 @@
 void swap(char* a, char* b) {
     char temp = *a;
     *a = *b;
-    *b = temp;
 }
 
 bool next_permutation(char* str, int length) {
@@ -36,7 +35,7 @@ bool next_permutation(char* str, int length) {
 
 int main() {
     char word[100];
-    printf("Введите слово: ");
+    printf("Введіть слово: ");
     scanf("%s", word);
     
     int length = strlen(word);
@@ -54,6 +53,6 @@ int main() {
         count++;
     } while (next_permutation(word, length));
     
-    printf("Количество анаграмм: %d\n", count);
+    printf("Кількість анаграм: %d\n", count);
     return 0;
 }
